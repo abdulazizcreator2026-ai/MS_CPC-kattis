@@ -1,0 +1,7 @@
+a=float(input())
+integer_part=int(a)
+decimal_part=a-integer_part
+if decimal_part>=0.5:
+    print(integer_part+1)
+else:
+    print(integer_part)    
