@@ -1,0 +1,5 @@
+A,I=map(int,input().split())
+if 1<=A<=100 and 1<=I<=100:
+    print(A * (I - 1) + 1)
+else:
+    print("Invalid input")
