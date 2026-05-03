@@ -1,0 +1,13 @@
+a,b=map(int,input(). split())
+sum1=0
+for i in range(a):
+    v,c=map(float,input().split())
+    sum1+=v*c
+sum2=0    
+for i in range(b):
+    v,c=map(float,input().split())
+    sum2+=v*c
+if sum1==sum2:
+    print("same")
+else:
+    print("different")            
