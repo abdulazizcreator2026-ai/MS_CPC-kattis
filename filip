@@ -1,0 +1,9 @@
+a,b=map(int,input(). split())
+string_a=str(a)
+string_b=str(b)
+rev_a=int(string_a[::-1])
+rev_b=int(string_b[::-1])
+if rev_a>rev_b:
+    print(rev_a)
+else:
+    print(rev_b)    
