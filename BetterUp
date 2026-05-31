@@ -1,0 +1,30 @@
+n=int(input())
+n_int=list(map(int,input().split()))
+strike_outs=0
+singles=1
+doubles=2
+triples=3
+home_runs=4
+walks=-1
+tot_base=0
+tot_time=0
+for i in range(n):
+    if n_int[i]==strike_outs:
+        tot_base+=0
+        tot_time+=1
+    elif n_int[i]==singles:
+        tot_base+=1
+        tot_time+=1
+    elif n_int[i]==doubles:
+        tot_base+=2
+        tot_time+=1
+    elif n_int[i]==triples:
+        tot_base+=3
+        tot_time+=1 
+    elif n_int[i]==home_runs:
+        tot_base+=4
+        tot_time+=1
+    else:
+        continue
+slug_percent=tot_base/tot_time
+print(slug_percent) 
