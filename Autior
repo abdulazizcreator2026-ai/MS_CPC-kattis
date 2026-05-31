@@ -1,0 +1,10 @@
+long_variation=input()
+list=[]
+list.append(long_variation[0])
+for i in range(len(long_variation)):
+    if long_variation[i]=="-":
+        list.append(long_variation[i+1])
+    else:
+        continue
+for i in range(len(list)):
+    print(list[i],end="")
