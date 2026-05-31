@@ -1,0 +1,8 @@
+import math 
+d=float(input())
+w=float(input())
+n=int(input())
+if math.pi*d>=n*w:
+    print("YES")
+else:
+    print("NO")
