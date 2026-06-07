@@ -1,0 +1,11 @@
+a=input() 
+lst=[]
+for i in range(len(a)):
+    if a[i] not in lst:
+        lst.append(a[i])
+    else:
+        continue    
+if len(lst)%2==0:
+    print("CHAT WITH HER!")  
+else:
+    print("IGNORE HIM!")
