@@ -1,0 +1,13 @@
+n=int(input()) 
+lst=[]
+for i in range(n):
+    a=input()
+    lst.append(a)
+if 1<=n<=100:
+    for i in lst:
+        if len(i)>10:
+            print(i[0]+str(len(i)-2)+i[-1])
+        else:    
+            print(i)
+else:
+    print("Invalid input!")
