@@ -1,0 +1,14 @@
+S=input()
+up="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+low="abcdefghijklmnopqrstuvwxyz"
+count1=0
+count2=0
+for i in S:
+    if i in up:
+        count1+=1
+    else:
+        count2+=1
+if count1>count2:
+    print(S.upper()) 
+else:
+    print(S.lower())               
