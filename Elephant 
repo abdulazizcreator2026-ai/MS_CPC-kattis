@@ -1,0 +1,20 @@
+X=int(input())
+step=0
+count=0
+while count!=X:
+    if count+5<=X:
+        count+=5
+        step+=1
+    elif count+4<=X:
+        count+=4
+        step+=1
+    elif count+3<=X:
+        count+=3
+        step+=1
+    elif count+2<=X:
+        count+=2
+        step+=1
+    else:
+        count+=1
+        step+=1
+print(step)
