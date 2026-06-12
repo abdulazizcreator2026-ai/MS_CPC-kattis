@@ -1,0 +1,7 @@
+from math import *
+for i in range(5):
+    lst=list(map(int,input().split())) 
+    if 1 in lst:
+        row=i+1
+        column=lst.index(1)+1
+print(abs(row-3)+abs(column-3))
