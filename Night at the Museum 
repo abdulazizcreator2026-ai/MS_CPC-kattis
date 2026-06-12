@@ -1,0 +1,9 @@
+from math import *
+n=input() 
+current="a"
+moves=0
+for i in n:
+    d=abs(ord(i)-ord(current))
+    moves+=min(d,26-d)
+    current=i
+print(moves)    
