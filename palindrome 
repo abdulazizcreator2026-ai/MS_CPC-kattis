@@ -1,0 +1,9 @@
+N=int(input())
+A=list(map(int,input().split()))
+rev_A=A[::-1]
+if A==rev_A:
+    print("YES")
+else:
+    print("NO")    
+   
+    
