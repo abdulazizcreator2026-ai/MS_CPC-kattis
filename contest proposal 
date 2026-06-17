@@ -1,0 +1,14 @@
+t=int(input()) 
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    num_new_prob=0
+    for i in range(n):
+        if a[i]>b[i]:
+            a.insert(i,b[i])
+            a.pop()
+            num_new_prob+=1
+        else:
+            continue
+    print(num_new_prob)
