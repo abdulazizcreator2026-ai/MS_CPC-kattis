@@ -1,0 +1,16 @@
+t=int(input())
+for _ in range(t):
+    n,k=map(int,input().split())
+    a=list(map(int,input().split()))
+    a.sort()
+    prefix=[0]
+    for x in a:
+        prefix.append(prefix[-1]+x)
+    ans=0
+    total=prefix[-1]
+    for x in range(k+1):
+        removed_small=prefix[2*x]
+        removed_large=prefix[n]-prefix[n-(k-x)]
+        current=total-removed_small-removed_large
+        ans=max(ans,current)
+    print(ans)
