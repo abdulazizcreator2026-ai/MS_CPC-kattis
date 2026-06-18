@@ -1,0 +1,6 @@
+n=int(input())
+p=tuple(map(int,input().split()))
+tot=0
+for i in p:
+    tot+=i/100
+print((tot/n)*100)
