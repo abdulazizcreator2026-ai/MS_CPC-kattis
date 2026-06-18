@@ -1,0 +1,14 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    if sum(a)%2==0:
+        if not 2 in a or not 1 in a:
+            if n%2==0:
+                print("YES")
+            else:
+                print("NO")   
+        else:
+            print("YES")        
+    else:
+        print("NO")
