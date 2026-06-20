@@ -1,0 +1,14 @@
+t=int(input())
+for _ in range(t):
+    a=input()
+    sum_1=0
+    sum_2=0
+    for i in range(6):
+        if i<3:
+            sum_1+=int(a[i])
+        else:
+            sum_2+=int(a[i])  
+    if sum_1==sum_2:
+        print("YES") 
+    else:
+        print("NO")
