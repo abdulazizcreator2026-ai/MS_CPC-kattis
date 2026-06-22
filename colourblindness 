@@ -1,0 +1,11 @@
+t=int(input()) 
+for _ in range(t):
+    n=int(input())  
+    a=input() 
+    b=input()    
+    for i in range(n):
+        if a[i]=="R" and b[i]!="R" or a[i]!="R" and b[i]=="R":
+            print("NO")
+            break
+        elif i==n-1:
+            print("YES")
