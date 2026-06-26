@@ -1,0 +1,5 @@
+a=input()
+if a[0].isupper():
+    print(a)
+else:
+    print(a[0].upper()+a[1:])
