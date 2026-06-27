@@ -1,0 +1,11 @@
+n=int(input())
+lst=[]
+for i in range(n):
+    a,b=map(int,input().split())
+    if i==0:
+        lst.append(b)
+    else:
+        lst.append((lst[i-1]-a)+b) 
+print(max(lst))           
+    
+    
