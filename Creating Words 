@@ -1,0 +1,7 @@
+t=int(input())  
+for _ in range(t):
+    a,b=input().split()
+    if a[0]==b[0]:
+        print(a,b)
+    else:
+        print(b[0]+a[1:],a[0]+b[1:])
